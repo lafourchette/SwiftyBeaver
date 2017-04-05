@@ -148,7 +148,7 @@ public class SBPlatformDestination: BaseDestination {
 
     // append to file, each line is a JSON dict
     override public func send(_ level: SwiftyBeaver.Level, msg: String, thread: String,
-        file: String, function: String, line: Int) -> String? {
+        file: String, function: String, line: Int, completion: (() -> Void)? = nil) -> String? {
 
         var jsonString: String?
 
@@ -177,7 +177,7 @@ public class SBPlatformDestination: BaseDestination {
             if (points >= sendingPoints.threshold && points >= minAllowedThreshold) || points > maxAllowedThreshold {
                 toNSLog("\(points) points is >= threshold")
                 // above threshold, send to server
-                sendNow()
+                sendNow(completion: completion)
 
             } else if initialSending {
                 initialSending = false
@@ -189,7 +189,7 @@ public class SBPlatformDestination: BaseDestination {
                         var msg = "initialSending: \(points) points is below threshold "
                         msg += "but json file already has \(lines) lines."
                         toNSLog(msg)
-                        sendNow()
+                        sendNow(completion: completion)
                     }
                 }
             }
@@ -201,7 +201,7 @@ public class SBPlatformDestination: BaseDestination {
     // MARK: Send-to-Server Logic
 
     /// does a (manual) sending attempt of all unsent log entries to SwiftyBeaver Platform
-    public func sendNow() {
+    public func sendNow(completion: (() -> Void)? = nil) {
 
         if sendFileExists() {
             toNSLog("reset points to 0")
@@ -254,6 +254,9 @@ public class SBPlatformDestination: BaseDestination {
                             }
                             self.sendingInProgress = false
                             self.points = 0
+                            if let completion = completion {
+                                completion()
+                            }
                         }
                     }
                 }
