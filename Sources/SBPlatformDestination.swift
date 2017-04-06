@@ -190,8 +190,14 @@ public class SBPlatformDestination: BaseDestination {
                         msg += "but json file already has \(lines) lines."
                         toNSLog(msg)
                         sendNow(completion: completion)
+                    } else {
+                        completion?()
                     }
+                } else {
+                    completion?()
                 }
+            } else {
+                completion?()
             }
         }
 
