@@ -92,7 +92,7 @@ open class BaseDestination: Hashable, Equatable {
     /// returns the formatted log message for processing by inheriting method
     /// and for unit tests (nil if error)
     open func send(_ level: SwiftyBeaver.Level, msg: String, thread: String, file: String,
-        function: String, line: Int) -> String? {
+                   function: String, line: Int, completion: (() -> Void)? = nil) -> String? {
 
         if format.hasPrefix("$J") {
             return messageToJSON(level, msg: msg, thread: thread,
