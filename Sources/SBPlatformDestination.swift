@@ -147,8 +147,8 @@ public class SBPlatformDestination: BaseDestination {
     }
 
     // append to file, each line is a JSON dict
-    override public func send(_ level: SwiftyBeaver.Level, msg: String, thread: String,
-        file: String, function: String, line: Int, completion: (() -> Void)? = nil) -> String? {
+    override public func send(_ level: SwiftyBeaver.Level, msg: String, thread: String = "",
+        file: String = #file, function: String = #function, line: Int = #line, completion: (() -> Void)? = nil) -> String? {
 
         var jsonString: String?
 
