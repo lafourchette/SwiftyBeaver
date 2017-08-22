@@ -26,7 +26,7 @@ public final class GoogleCloudDestination: BaseDestination {
     }
 
     override public func send(_ level: SwiftyBeaver.Level, msg: String, thread: String,
-                              file: String, function: String, line: Int, context: Any? = nil) -> String? {
+                              file: String, function: String, line: Int, context: Any? = nil, completion: (() -> Void)? = nil) -> String? {
 
         let reportLocation: [String: Any] = ["filePath": file, "lineNumber": line, "functionName": function]
         var gcpContext: [String: Any] = ["reportLocation": reportLocation]
