@@ -5,6 +5,74 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ----
 <br/>
+
+## 1.4.0 (2017-08-12)
+
+##### Added
+
+- Support for latest Xcode 9 beta, Swift 3.2 & Swift 4 by [@lgaches](https://github.com/lgaches)
+- Less aggressive file protection type when logfile is created by [@igorefremov](https://github.com/igorefremov)
+
+
+<br/>
+
+## 1.3.2 (2017-07-19)
+
+##### Fixed
+
+- Issue under macOS server-side Swift with file protection type by [@skreutzberger](https://github.com/skreutzberger)
+
+<br/>
+
+## 1.3.1 (2017-07-19)
+
+##### Added
+- Better solution to instable b64 encoding of Swift 3.1.x under Linux  by [@lgaches](https://github.com/lgaches)
+- Set file protection type when logfile is created by [@igorefremov](https://github.com/igorefremov)
+
+<br/>
+
+##### Fixed
+
+- Issue with validation of required filters by [@alessandroorru](https://github.com/alessandroorru)
+- Issue issue with multiple destinations with message filters by [@alessandroorru](https://github.com/alessandroorru)
+
+<br/>
+
+## 1.3.0 (2017-06-22)
+
+##### Added
+
+- New context parameter for more detailed logging by [@lgaches](https://github.com/lgaches)
+- Support for more watchOS versions by [@basememara](https://github.com/basememara)
+
+<br/>
+
+## 1.2.2 (2017-05-04)
+
+##### Fixed
+
+- Issue while building for macOS, tvOS & watchOS by [@alex-can](https://github.com/alex-chan)
+- Issue while building on a case-sensitive file system by [@alex-can](https://github.com/alex-chan)
+
+<br/>
+
+## 1.2.1 (2017-04-24)
+
+##### Fixed
+
+- Logic issue in filter by [@rajatk](https://github.com/rajatk)
+
+<br/>
+
+## 1.2.0 (2017-04-11)
+
+##### Added
+
+- Google Cloud / Stackdriver destination by [@lgaches](https://github.com/lgaches)
+
+<br/>
+
 ## 1.1.4 (2017-03-28)
 
 ##### Added
@@ -12,6 +80,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - console destination property `.useTerminalColors` by [@skreutzberger](https://github.com/skreutzberger)
 
 <br/>
+
 ## 1.1.3 (2017-02-22)
 
 ##### Added
@@ -30,6 +99,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 
 <br/>
+
 ## 1.1.2 (2017-02-16)
 
 ##### Added
@@ -44,6 +114,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - `Public` is now `Open` in `SwiftyBeaver.swift` by [@skreutzberger](https://github.com/skreutzberger)
 
 <br/>
+
 ## 1.1.1 (2016-10-28)
 
 ##### Added
@@ -51,6 +122,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Support for Xcode 8.1 by [@skreutzberger](https://github.com/skreutzberger)
 
 <br/>
+
 ## 1.1.0 (2016-10-12)
 
 ##### Added
@@ -58,6 +130,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Support for server-side Swift (macOS & Linux) by [@skreutzberger](https://github.com/skreutzberger)
 
 <br/>
+
 ## 1.0.3 (2016-09-21)
 
 ##### Changed
@@ -65,6 +138,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - New format key `$Z` outputs datetime as UTC by [@skreutzberger](https://github.com/skreutzberger)
 
 <br/>
+
 ## 1.0.2 (2016-09-19)
 
 ##### Changed
@@ -72,6 +146,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Lowercase enum cases (`.Debug` -> `.debug`) to match Swift 3 convention by [@skreutzberger](https://github.com/skreutzberger)
 
 <br/>
+
 ## 1.0.1 (2016-09-17)
 
 ##### Added
@@ -79,6 +154,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Colored log level indicators for Xcode 8 Console by [@skreutzberger](https://github.com/skreutzberger)
 
 <br/>
+
 ## 1.0.0 (2016-09-15)
 
 ##### Added
@@ -97,6 +173,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - swift3 branch & tag 0.0.0 by [@skreutzberger](https://github.com/skreutzberger)
 
 <br/>
+
 ## 0.7.0 (2016-09-09)
 
 ##### Added
@@ -109,6 +186,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - .detailOutput, .colored & .coloredLines properties by [@skreutzberger](https://github.com/skreutzberger)
 
 <br/>
+
 ## 0.6.5 (2016-07-29)
 
 ##### Changed
@@ -120,6 +198,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Broken support for tvOS in platform destination by [@markj](https://github.com/markj)
 
 <br/>
+
 ## 0.6.4 (2016-07-28)
 
 ##### Added
@@ -135,6 +214,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Potential issue when setting a platform sending threshold of lower than 1 by [@skreutzberger](https://github.com/skreutzberger)
 
 <br/>
+
 ## 0.6.3 (2016-06-29)
 
 ##### Added
@@ -147,6 +227,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Dedicated log level filter by [@skreutzberger](https://github.com/skreutzberger)
 
 <br/>
+
 ## 0.6.2 (2016-06-21)
 
 ##### Added
@@ -170,6 +251,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Filter `required` argument defines AND (`required: true`) or OR (`required: false`) relation between filters by [@JeffBNimble](https://github.com/JeffBNimble)
 
 <br/>
+
 ## 0.6.0 (2016-06-07)
 
 ##### Added
@@ -193,6 +275,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Memory leak in string manipulation by [@dkalachov](https://github.com/dkalachov)
 
 <br/>
+
 ## 0.5.3 (2016-05-11)
 
 ##### Added
@@ -205,6 +288,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Lowered minimum OSX version to 10.10 for CocoaPods by [@skreutzberger](https://github.com/skreutzberger)
 
 <br/>
+
 ## 0.5.2 (2016-05-02)
 
 ##### Added
@@ -217,6 +301,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Adjusted file destination colors to match SwiftyBeaver Mac App UI by [@skreutzberger](https://github.com/skreutzberger)
 
 <br/>
+
 ## 0.5.1 (2016-04-28)
 
 ##### Added
@@ -230,6 +315,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Issue with overwritten analytics data by [@skreutzberger](https://github.com/skreutzberger)
 
 <br/>
+
 ## 0.5.0 (2016-04-19)
 
 ##### Added
@@ -246,6 +332,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Optimized codebase for Swift 2.2, Swift 3 & Xcode 7.3 by [@skreutzberger](https://github.com/skreutzberger)
 
 <br/>
+
 ## 0.4.1 (2016-03-11)
 
 ##### Added
@@ -255,6 +342,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Internal linting of code base by [@skreutzberger](https://github.com/skreutzberger)
 
 <br/>
+
 ## 0.4.0 (2016-03-04)
 
 ##### Added
@@ -268,6 +356,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Default log file directory for iOS, tvOS & watchOS is an app’s cache directory by [@xeo-it](https://github.com/xeo-it)
 
 <br/><br/>
+
 ## 0.3.5 (2016-02-24)
 
 ##### Changed
@@ -275,6 +364,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Optimized performance by letting log functions take @autoclosure by [@reesemclean](https://github.com/reesemclean)
 
 <br/>
+
 ## 0.3.4 (2016-02-23)
 
 ##### Changed
@@ -282,6 +372,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Optimized writing to log file by [@skreutzberger](https://github.com/skreutzberger). Thanks go to [Andy Chou](https://twitter.com/_achou) for pointing on it.
 
 <br/>
+
 ## 0.3.3 (2016-02-09)
 
 ##### Added
@@ -294,6 +385,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 
 <br/>
+
 ## 0.3.2 (2016-02-04)
 
 ##### Added
@@ -303,6 +395,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 
 <br/>
+
 ## 0.3.1 (2016-01-11)
 
 ##### Added
@@ -312,6 +405,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 
 <br/>
+
 ## 0.3.0 (2015-12-11)
 
 #### Added
@@ -321,6 +415,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 
 <br/><br/>
+
 ## 0.2.5 (2015-12-10)
 
 #### Added
@@ -331,6 +426,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 
 <br/>
+
 ## 0.2.4 (2015-12-09)
 
 #### Added
@@ -343,6 +439,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 
 <br/>
+
 ## 0.2.3 (2015-12-09)
 
 #### Added
@@ -351,6 +448,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 
 <br/>
+
 ## 0.2.2 (2015-12-09)
 
 #### Added
@@ -363,6 +461,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 
 <br/>
+
 ## 0.2.1 (2015-12-06)
 
 #### Added
@@ -372,6 +471,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 
 <br/>
+
 ## 0.2.0 (2015-12-05)
 
 #### Added
@@ -398,6 +498,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 
 <br/>
+
 ## 0.1.0 (2015-11-28)
 
 #### Added
